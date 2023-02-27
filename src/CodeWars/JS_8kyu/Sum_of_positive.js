@@ -1,6 +1,6 @@
 const numberArr = [3, 12, -4, 4, -5]
 const positiveSum = (arr) => {
-    const positiveArr = numberArr.map(n => Math.sign(n) >= 0 ? n : null)
+    const positiveArr = arr.map(n => Math.sign(n) >= 0 ? n : null)
     return positiveArr.reduce((acc, num) => acc + num, 0)
 }
 console.log(positiveSum(numberArr))
