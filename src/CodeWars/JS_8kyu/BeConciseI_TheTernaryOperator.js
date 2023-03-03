@@ -33,9 +33,15 @@ console.log(describeAge_1(8))
 //Функцию записываем форматом декларейшон, это позволит сократить количество знаков.
 //Параметр age также сократим до одной буквы a!
 //Убираем всевозможные пробелы.
+//Получаем 128 символов!
 
 function describeAge(a){
     let n="You're a(n) "
     return a<13?`${n}kid`:a<18?`${n}teenager`:a<65?`${n}adult`:`${n}elderly`
 }
 console.log(describeAge(89))
+
+//или же, используя стрелочную и неявный возврат + иную структуру шаблонной строки,
+//получим 87 символов
+const describeAge_2=a=>`You're a(n) ${a<13?`kid`:a<18?`teenager`:a<65?`adult`:`elderly`}`
+console.log(describeAge_2(22))
