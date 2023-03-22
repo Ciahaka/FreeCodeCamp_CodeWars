@@ -9,7 +9,8 @@ const arrayOfSheep = [true, true, true, false,
 
 // const countSheep = arr => arr.reduce((acc, cur) => acc + cur, 0)   <---???
 
-const countSheep = array1 => array1.filter(Boolean).length  // Boolean поможет создаст новый массив с элементами равными true. Решение аналогично записи ниже
+const countSheep = array1 => array1.filter(Boolean).length
+// Boolean поможет создаст новый массив с элементами равными true. Решение аналогично записи ниже
 // or
 // const countSheep = arr => arr.filter(sh=>sh===true).length
 
