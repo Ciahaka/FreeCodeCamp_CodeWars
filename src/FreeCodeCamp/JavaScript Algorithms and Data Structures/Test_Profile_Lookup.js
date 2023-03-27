@@ -63,3 +63,11 @@ console.log(lookUpProfile('Bob', 'number'));
 // Если второй оператор if не сработал, то такое свойство не возвращается.
 // Если первый оператор if не сработал, цикл for переходит к следующему объекту в списке контактов.
 // Если параметр firstName не соответствует последнему объекту контактов, цикл for завершается и возвращается No such contact.
+
+//PS
+function lookUpProfile_1(name, prop){
+    const fnMatch = contacts.filter(contact => contact.firstName === name);
+    return fnMatch.length ? (fnMatch[0][prop] ? fnMatch[0][prop] : "No such property") : "No such contact";
+}
+
+console.log(lookUpProfile_1('Kristian', 'lastName'))
