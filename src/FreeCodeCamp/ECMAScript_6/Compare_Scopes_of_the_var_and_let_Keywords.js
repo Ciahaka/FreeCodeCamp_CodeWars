@@ -68,3 +68,30 @@ const checkScope = () => {
     return i;
 }
 console.log(checkScope())
+
+function* getStat(){
+    yield 1
+    yield 2
+    return  3
+}
+const generator = getStat()
+console.log(generator.next())
+console.log(generator.next())
+console.log(generator.next())
+console.log(generator.next())
+
+function* getGenerator(start,end){
+    for (let i = start; i <end ; i++) {
+        yield i
+    }
+    return end
+}
+const generator_1 = getGenerator(1,3)
+console.log('-------')
+console.log(generator_1.return())
+
+const arr = [1,5,2,10]
+const newArr = arr.fill(4,2)
+console.log(newArr) // fill(4) ==>> [ 4, 4, 4, 4 ]
+console.log(newArr) // fill(4,2) ===>[ 1, 5, 4, 4 ]
+console.log(newArr) // fill(4,1,3) ==>> [ 1, 4, 4, 10 ]
