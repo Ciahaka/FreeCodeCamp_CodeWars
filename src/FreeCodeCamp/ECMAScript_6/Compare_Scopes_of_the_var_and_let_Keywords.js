@@ -91,7 +91,8 @@ console.log('-------')
 console.log(generator_1.return())
 
 const arr = [1,5,2,10]
-const newArr = arr.fill(4,2)
-console.log(newArr) // fill(4) ==>> [ 4, 4, 4, 4 ]
-console.log(newArr) // fill(4,2) ===>[ 1, 5, 4, 4 ]
-console.log(newArr) // fill(4,1,3) ==>> [ 1, 4, 4, 10 ]
+arr.fill(4,2)
+console.log(arr)
+// fill(4) ==>> [ 4, 4, 4, 4 ]
+// fill(4,2) ===>[ 1, 5, 4, 4 ]
+// fill(4,1,3) ==>> [ 1, 4, 4, 10 ]
